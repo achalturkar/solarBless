@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+
+body {
+  font-family: var(--font-poppins), sans-serif;
+}
+
+@layer utilities {
+  @keyframes slideLine {
+    0% { width: 0%; opacity: 0.2; }
+    40% { width: 40%; opacity: 1; }
+  }
+
+  .animate-slide {
+    animation: slideLine 1.8s ease-out forwards;
+  }
+}
+
+
+@keyframes move {
+
+  0% {
+    left: 0%;
+  }
+
+  100% {
+    left: 100%;
+  }
+
+}
+
+.animate-move {
+  animation: move 5s linear infinite;
+}
+
+/* 
+.swiper-slide {
+  transform: scale(1);
+  transition: transform 0.1s ease, filter  ease;
+  filter: grayscale(100%);
+  opacity: 0.7;
+}
+
+.swiper-slide.scale-100 {
+  transform: scale(1);
+  filter: grayscale(0%);
+  opacity: 1;
+  z-index: 3;
+}
+
+.swiper-slide.scale-80 {
+  transform: scale(0.8);
+  filter: grayscale(50%);
+  z-index: 2;
+}
+
+.swiper-slide.scale-70 {
+  transform: scale(0.7);
+  filter: grayscale(100%);
+  z-index: 1; 
+} */
+/* 
+@media (max-width: 640px) {
+  .swiper {
+    padding-left: 20px;
+    padding-right: 20px;
+  } 
+} */
