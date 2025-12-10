@@ -3,7 +3,7 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 
 export default function About() {
   return (
-    <section id="about" className="bg-gray-50 py-20 px-6">
+    <section id="about" className="bg-gray-50 py-10 px-6">
            <SectionTitle 
         title="About Us"
         subtitle="Learn more about our journey in solar excellence"
@@ -16,7 +16,7 @@ export default function About() {
             src="/abs1.jpg"
             alt="Solar Panels"
             fill
-            // className="object-cover"
+            className="object-cover"
           />
         </div>
 
@@ -38,7 +38,7 @@ export default function About() {
           {/* Key Highlights */}
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded shadow-sm">
-              <h3 className="font-semibold text-gray-800">15+ Years Experience</h3>
+              <h3 className="font-semibold text-gray-800">10+ Years Experience</h3>
             </div>
             <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded shadow-sm">
               <h3 className="font-semibold text-gray-800">Trusted Solar Solutions</h3>

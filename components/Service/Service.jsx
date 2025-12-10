@@ -90,7 +90,7 @@ export default function Service() {
                         {/* Tall Right Image */}
                         <div className="row-span-2 col-span-1">
                             <Image
-                                src="/img/sp1.jpg"
+                                src="/img/sv.png"
                                 alt="Solar PV tall"
                                 width={500}
                                 height={800}

@@ -18,7 +18,6 @@ const BrochureButton = () => {
         "
       >
         <FiDownload size={20} />
-        {/* Download Brochure */}
       </div>
     </Link>
   );

@@ -7,6 +7,7 @@ import Gallery from "@/components/Gallery/Gallery";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import HeroVideo from "@/components/HeroVideo/HeroVideo";
 import Map from "@/components/Map/Map";
+import ProjectsCompleted from "@/components/ProjectsCompleted/ProjectsCompleted";
 import Service from "@/components/Service/Service";
 import StatsCounter from "@/components/StatsCounter/StatsCounter";
 import Head from "next/head";
@@ -45,7 +46,9 @@ export default function Home() {
                 <StatsCounter/>
 
 
-        <Gallery/>
+        {/* <Gallery/> */}
+
+        <ProjectsCompleted/>
 
 
         <Contact />
