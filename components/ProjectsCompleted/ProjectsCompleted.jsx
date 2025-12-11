@@ -47,11 +47,8 @@ export default function ProjectsCompleted() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 
           {/* Solar Water Heater Section */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+          <div
+        
             className="bg-white p-8 rounded-2xl shadow-xl border-l-4 border-amber-500"
           >
             <h3 className="text-3xl font-bold text-amber-700 mb-3">
@@ -69,14 +66,11 @@ export default function ProjectsCompleted() {
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </div>
 
           {/* Solar PV Section */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+          <div
+          
             className="bg-white p-8 rounded-2xl shadow-xl border-l-4 border-green-500"
           >
             <h3 className="text-3xl font-bold text-green-700 mb-3">
@@ -94,7 +88,7 @@ export default function ProjectsCompleted() {
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </div>
 
         </div>
 
