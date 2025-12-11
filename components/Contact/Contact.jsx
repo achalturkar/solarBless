@@ -19,24 +19,11 @@ export default function Contact() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+ const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    try {
-      // Send Email
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-
-      const data = await res.json();
-
-      if (data.success) {
-        alert("Message sent successfully!");
-
-        // Redirect to WhatsApp with prefilled message
-        const wpMessage = `
+  // Create WhatsApp message
+  const wpMessage = `
 New Contact Form Submission:
 --------------------------
 Name: ${formData.name}
@@ -45,31 +32,27 @@ Phone: ${formData.phone}
 City: ${formData.city}
 Requirement: ${formData.requirement}
 Message: ${formData.message}
-        `;
+  `;
 
-        window.open(
-          `https://wa.me/${ADMIN_WHATSAPP}?text=${encodeURIComponent(
-            wpMessage
-          )}`,
-          "_blank"
-        );
+  // Redirect to WhatsApp
+  window.open(
+    `https://wa.me/${ADMIN_WHATSAPP}?text=${encodeURIComponent(wpMessage)}`,
+    "_blank"
+  );
 
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          city: "",
-          requirement: "Solar PV",
-          message: "",
-        });
+  // Reset form
+  setFormData({
+    name: "",
+    email: "",
+    phone: "",
+    city: "",
+    requirement: "Solar PV",
+    message: "",
+  });
 
-      } else {
-        alert("Failed to send message: " + data.message);
-      }
-    } catch (error) {
-      alert("Error sending message: " + error.message);
-    }
-  };
+  alert("Message sent successfully via WhatsApp!");
+};
+
 
   return (
     <section id="contact" className="py-20 px-6 bg-gradient-to-b from-yellow-50 to-orange-50">

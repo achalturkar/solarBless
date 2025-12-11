@@ -1,75 +1,152 @@
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaMapMarkerAlt, FaEnvelope, FaPhone } from "react-icons/fa";
+"use client";
+
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaMapMarkerAlt,
+  FaEnvelope,
+  FaPhone,
+} from "react-icons/fa";
+import Image from "next/image";
 
 export default function Footer() {
-  return (
-    <footer className="relative bg-gray-900 text-gray-200">
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <img
-          src="/solar-bg.jpg" // Replace with your solar panel background image path
-          alt="Solar Panels Background"
-          className="w-full h-full object-cover opacity-20"
-        />
-      </div>
+  const year = new Date().getFullYear();
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-4 gap-12">
-        {/* Brand */}
+  return (
+    <footer className="relative bg-gray-950 text-gray-300 overflow-hidden">
+
+      {/* Background Image Overlay */}
+      {/* <div className="absolute inset-0">
+        <img
+          src="/solar-bg.jpg"
+          alt="Solar Background"
+          className="w-full h-full object-cover opacity-15"
+        />
+      </div> */}
+
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-gray-900/90 to-transparent"></div>
+
+      {/* Content */}
+      <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 grid sm:grid-cols-2 md:grid-cols-4 gap-14">
+
+        {/* Logo + Description */}
         <div>
-          <h2 className="text-2xl font-bold text-white">SunBless Solar Systems</h2>
-          <p className="mt-3 text-gray-300 leading-6">
-            Powering a Sustainable Future with reliable Solar Water Heaters and PV Systems since 2009.
+          <Image
+            src="/sbss.webp"
+            width={120}
+            height={120}
+            alt="SunBless Solar Logo"
+            className="mb-4 brightness-110 drop-shadow-xl"
+          />
+
+          <p className="text-gray-300 leading-7 text-sm">
+            Powering a Sustainable Future with reliable Solar Water Heaters and
+            Solar PV Systems.  
+            <span className="block text-yellow-400 font-semibold mt-2">
+              Trusted. Reliable. Renewable.
+            </span>
           </p>
         </div>
 
         {/* Quick Links */}
         <div>
-          <h3 className="text-white text-lg font-semibold mb-3">Quick Links</h3>
-          <ul className="space-y-2">
-            <li><a href="#home" className="hover:text-yellow-400 transition-colors">Home</a></li>
-            <li><a href="#about" className="hover:text-yellow-400 transition-colors">About</a></li>
-            <li><a href="#services" className="hover:text-yellow-400 transition-colors">Services</a></li>
-            <li><a href="#projects" className="hover:text-yellow-400 transition-colors">Projects</a></li>
-            <li><a href="#contact" className="hover:text-yellow-400 transition-colors">Contact</a></li>
+          <h3 className="text-lg font-semibold text-white mb-4 border-l-4 pl-3 border-yellow-400">
+            Quick Links
+          </h3>
+          <ul className="space-y-2 text-sm">
+            {["Home", "About", "Services", "Projects", "Contact"].map((item) => (
+              <li key={item}>
+                <a
+                  href={`#${item.toLowerCase()}`}
+                  className="hover:text-yellow-400 transition-all"
+                >
+                  {item}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
 
         {/* Contact Info */}
         <div>
-          <h3 className="text-white text-lg font-semibold mb-3">Contact Us</h3>
-          <ul className="space-y-2 text-gray-300">
-            <li className="flex items-start space-x-2">
-              <FaMapMarkerAlt className="mt-1 text-yellow-400" />
-              <span>Head Office: 200, Ascent Chamber Narayan Peth, Pune-411030</span>
+          <h3 className="text-lg font-semibold text-white mb-4 border-l-4 pl-3 border-yellow-400">
+            Contact Us
+          </h3>
+
+          <ul className="space-y-3 text-sm">
+            <li className="flex items-start gap-3">
+              <FaMapMarkerAlt className="text-yellow-400 mt-1 text-lg" />
+              <p>Head Office: 200, Ascent Chamber Narayan Peth, Pune 411030</p>
             </li>
-            <li className="flex items-start space-x-2">
-              <FaMapMarkerAlt className="mt-1 text-yellow-400" />
-              <span>Factory Address: S.No.14 Dhadge Industrial Estate, Nanded Phata Near Savali Dhaba, Pune-411041</span>
+
+            <li className="flex items-start gap-3">
+              <FaMapMarkerAlt className="text-yellow-400 mt-1 text-2xl" />
+              <p>
+                Factory: S.No.14 Dhadge Industrial Estate, Nanded Phata Near
+                Savali Dhaba, Pune 411041
+              </p>
             </li>
-            <li className="flex items-center space-x-2">
-              <FaEnvelope className="text-yellow-400" />
-              <span>sunblesssolar@gmail.com</span>
+
+            <li className="flex items-center gap-3">
+              <FaEnvelope className="text-yellow-400 text-lg" />
+              <a
+                href="mailto:sunblesssolar@gmail.com"
+                className="hover:text-yellow-400"
+              >
+                sunblesssolar@gmail.com
+              </a>
             </li>
-            <li className="flex items-center space-x-2">
-              <FaPhone className="text-yellow-400" />
-              <span>8237784351 / 9552047630</span>
+
+            <li className="flex items-center gap-3">
+              <FaPhone className="text-yellow-400 text-lg" />
+               <a href="tel:9552047630" className="hover:text-yellow-400">
+                8087118536 
+              </a>{" "}
+              /
+              <a href="tel:8237784351" className="hover:text-yellow-400">
+                8237784351
+              </a>
+             
             </li>
           </ul>
         </div>
 
         {/* Social Media */}
         <div>
-          <h3 className="text-white text-lg font-semibold mb-3">Follow Us</h3>
-          <div className="flex space-x-4 text-xl">
-            <a href="#" className="hover:text-yellow-400"><FaFacebookF /></a>
-            <a href="#" className="hover:text-yellow-400"><FaInstagram /></a>
-            <a href="#" className="hover:text-yellow-400"><FaLinkedinIn /></a>
+          <h3 className="text-lg font-semibold text-white mb-4 border-l-4 pl-3 border-yellow-400">
+            Follow Us
+          </h3>
+
+          <div className="flex items-center gap-4 text-xl">
+            <a
+              href="#"
+              className="p-2 rounded-full bg-gray-800 hover:bg-yellow-500 hover:text-black transition-all shadow-md"
+            >
+              <FaFacebookF />
+            </a>
+
+            <a
+              href="#"
+              className="p-2 rounded-full bg-gray-800 hover:bg-yellow-500 hover:text-black transition-all shadow-md"
+            >
+              <FaInstagram />
+            </a>
+
+            <a
+              href="#"
+              className="p-2 rounded-full bg-gray-800 hover:bg-yellow-500 hover:text-black transition-all shadow-md"
+            >
+              <FaLinkedinIn />
+            </a>
           </div>
         </div>
       </div>
 
-      {/* Footer Bottom Line */}
-      <div className="relative z-10 text-center text-sm text-gray-400 mt-10 py-4 border-t border-gray-700">
-        © 2025 SunBless Solar Systems. All Rights Reserved.
+      {/* Copyright Bar */}
+      <div className="relative z-10 text-center text-xs text-gray-400 py-5 border-t border-gray-700/50">
+        © {year} SunBless Solar Systems — All Rights Reserved.
       </div>
     </footer>
   );

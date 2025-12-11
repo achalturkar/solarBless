@@ -3,7 +3,7 @@ import { FiDownload } from "react-icons/fi";
 
 const BrochureButton = () => {
   return (
-    <Link href="/sunblessSolarProfile.pdf" target="_blank">
+    <Link href="/SunblessSolarProfile.pdf" target="_blank">
       <div
         className="
           flex items-center gap-2 

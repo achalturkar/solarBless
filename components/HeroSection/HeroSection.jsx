@@ -25,7 +25,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative w-full h-[90vh] md:h-[100vh] overflow-hidden bg-yellow-50">
+    <section id="home" className="relative w-full h-[90vh] md:h-[100vh] overflow-hidden bg-yellow-50">
       {/* Slider Images */}
       {slides.map((slide, index) => (
         <div

@@ -3,22 +3,40 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 
 export default function About() {
   return (
-    <section id="about" className="bg-gray-50 py-10 px-6">
-           <SectionTitle 
+    <section id="about" className=" py-10 px-6">
+      <SectionTitle
         title="About Us"
         subtitle="Learn more about our journey in solar excellence"
       />
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        
+
         {/* Left Column - Image */}
-        <div className="relative w-full h-full md:h-[400px] rounded-lg overflow-hidden shadow-lg">
+<div className="relative w-full h-[300px] md:h-[420px] rounded-3xl overflow-hidden shadow-xl group border border-yellow-300/30">
           <Image
-            src="/abs1.jpg"
+            src="/smp.jpg"
             alt="Solar Panels"
             fill
-            className="object-cover"
+            className="
+      object-cover 
+      transition-transform duration-700 
+      group-hover:scale-110
+    "
           />
+
+          {/* Soft Gradient Overlay */}
+          <div className="
+    absolute inset-0 
+    bg-gradient-to-t from-black/40 via-black/10 to-transparent
+    pointer-events-none
+  "></div>
+
+          {/* Yellow Glow Bottom Border */}
+          <div className="
+    absolute bottom-0 left-0 right-0 h-2 
+    bg-gradient-to-r from-yellow-500/70 via-orange-400/70 to-yellow-500/70
+  "></div>
         </div>
+
 
         {/* Right Column - Text Content */}
         <div className="flex flex-col justify-center">
@@ -26,7 +44,7 @@ export default function About() {
             About SunBless Solar Systems
           </h2> */}
           <p className="text-gray-700 leading-relaxed mb-6">
-            SunBless Solar Systems is a <span className="font-semibold text-yellow-600">leading provider of innovative and reliable solar energy solutions</span>, specializing in both <span className="font-semibold text-yellow-600">Solar Water Heaters (SWHs)</span> and <span className="font-semibold text-yellow-600">Solar Photovoltaic (PV) Panel Systems</span> since 20th July 2009.  
+            SunBless Solar Systems is a <span className="font-semibold text-yellow-600">leading provider of innovative and reliable solar energy solutions</span>, specializing in both <span className="font-semibold text-yellow-600">Solar Water Heaters (SWHs)</span> and <span className="font-semibold text-yellow-600">Solar Photovoltaic (PV) Panel Systems.</span>
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
             We are committed to empowering individuals, businesses, and communities to embrace clean, affordable, and sustainable energy, contributing to a greener future for generations to come.
