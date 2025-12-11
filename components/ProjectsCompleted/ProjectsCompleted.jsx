@@ -48,7 +48,7 @@ export default function ProjectsCompleted() {
 
           {/* Solar Water Heater Section */}
           <div
-        
+        data-aos="fade-up"
             className="bg-white p-8 rounded-2xl shadow-xl border-l-4 border-amber-500"
           >
             <h3 className="text-3xl font-bold text-amber-700 mb-3">
@@ -70,7 +70,7 @@ export default function ProjectsCompleted() {
 
           {/* Solar PV Section */}
           <div
-          
+          data-aos="fade-up"
             className="bg-white p-8 rounded-2xl shadow-xl border-l-4 border-green-500"
           >
             <h3 className="text-3xl font-bold text-green-700 mb-3">

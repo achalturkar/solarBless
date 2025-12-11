@@ -6,8 +6,9 @@ import {
   FaLinkedinIn,
   FaMapMarkerAlt,
   FaEnvelope,
-  FaPhone,
 } from "react-icons/fa";
+import { IoCall } from "react-icons/io5";
+
 import Image from "next/image";
 
 export default function Footer() {
@@ -100,7 +101,7 @@ export default function Footer() {
             </li>
 
             <li className="flex items-center gap-3">
-              <FaPhone className="text-yellow-400 text-lg" />
+              <IoCall className="text-yellow-400 text-lg" />
                <a href="tel:9552047630" className="hover:text-yellow-400">
                 8087118536 
               </a>{" "}

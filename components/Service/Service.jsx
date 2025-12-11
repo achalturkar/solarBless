@@ -13,7 +13,7 @@ export default function Service() {
       <div className="max-w-7xl mx-auto space-y-32">
 
         {/* ---------------------- SOLAR WATER HEATER ---------------------- */}
-        <div className="grid md:grid-cols-2 gap-14 items-center">
+        <div className="grid md:grid-cols-2 gap-14 items-center" data-aos="fade-up">
 
           {/* LEFT IMAGES */}
           <div className="grid grid-cols-2 gap-4">
@@ -43,7 +43,7 @@ export default function Service() {
           </div>
 
           {/* RIGHT INFO */}
-          <div>
+          <div data-aos="fade-up">
             <h3 className="text-3xl font-bold text-gray-900 mb-4">
               Solar Water Heaters (SWHs)
             </h3>
@@ -80,7 +80,7 @@ export default function Service() {
         <div className="grid md:grid-cols-2 gap-14 items-center">
 
           {/* IMAGE BLOCK */}
-          <div className="order-1 md:order-2 grid grid-cols-2 gap-4">
+          <div className="order-1 md:order-2 grid grid-cols-2 gap-4" data-aos="fade-up">
             <Image
               src="/img/ssp.jpg"
               alt="Solar PV"
@@ -107,7 +107,7 @@ export default function Service() {
           </div>
 
           {/* INFORMATION */}
-          <div className="order-2 md:order-1">
+          <div className="order-2 md:order-1" data-aos="fade-up">
             <h3 className="text-3xl font-bold text-gray-900 mb-4">
               Solar Photovoltaic (PV) Systems
             </h3>

@@ -39,7 +39,7 @@ export default function About() {
 
 
         {/* Right Column - Text Content */}
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center" data-aos="fade-up">
           {/* <h2 className="text-4xl font-bold text-gray-900 mb-6">
             About SunBless Solar Systems
           </h2> */}
@@ -55,16 +55,16 @@ export default function About() {
 
           {/* Key Highlights */}
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded shadow-sm">
+            <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded shadow-sm"  data-aos="fade-right">
               <h3 className="font-semibold text-gray-800">10+ Years Experience</h3>
             </div>
-            <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded shadow-sm">
+            <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded shadow-sm"  data-aos="fade-right">
               <h3 className="font-semibold text-gray-800">Trusted Solar Solutions</h3>
             </div>
-            <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded shadow-sm">
+            <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded shadow-sm"  data-aos="fade-right">
               <h3 className="font-semibold text-gray-800">Reliable PV & SWH Installations</h3>
             </div>
-            <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded shadow-sm">
+            <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded shadow-sm"  data-aos="fade-right">
               <h3 className="font-semibold text-gray-800">Customer Satisfaction Guaranteed</h3>
             </div>
           </div>

@@ -1,8 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { FaMapMarkerAlt, FaEnvelope, FaPhone } from "react-icons/fa";
+import { FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 import SectionTitle from "../SectionTitle/SectionTitle";
+import { IoCall } from "react-icons/io5";
+
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -60,13 +62,14 @@ Message: ${formData.message}
       <SectionTitle
         title="Get in Touch"
         subtitle="Reach out for premium solar PV and solar water heater solutions"
+        data-aos="fade-up"
       />
 
       {/* Contact Details */}
       <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 mt-10 overflow-x-hidden">
 
         {/* Address */}
-        <div className="bg-white p-6 shadow-lg rounded-xl border-l-4 border-yellow-500">
+        <div className="bg-white p-6 shadow-lg rounded-xl border-l-4 border-yellow-500" data-aos="fade-up">
           <FaMapMarkerAlt className="text-yellow-500 text-3xl mb-3" />
           <h3 className="text-xl font-semibold">Head Office</h3>
           <p className="text-gray-700 mt-2">
@@ -75,7 +78,7 @@ Message: ${formData.message}
         </div>
 
         {/* Factory Address */}
-        <div className="bg-white p-6 shadow-lg rounded-xl border-l-4 border-orange-500">
+        <div className="bg-white p-6 shadow-lg rounded-xl border-l-4 border-orange-500" data-aos="fade-up">
           <FaMapMarkerAlt className="text-orange-500 text-3xl mb-3" />
           <h3 className="text-xl font-semibold">Factory Address</h3>
           <p className="text-gray-700 mt-2">
@@ -85,21 +88,21 @@ Message: ${formData.message}
         </div>
 
         {/* Contact Info */}
-        <div className="bg-white p-6 shadow-lg rounded-xl border-l-4 border-yellow-500">
+        <div className="bg-white p-6 shadow-lg rounded-xl border-l-4 border-yellow-500" data-aos="fade-up">
           <h3 className="text-xl font-semibold mb-3">Contact Info</h3>
           <p className="flex items-center gap-3 text-gray-700">
             <FaEnvelope className="text-yellow-500 text-xl" />
             sunblesssolar@gmail.com
           </p>
           <p className="flex items-center gap-3 text-gray-700 mt-2">
-            <FaPhone className="text-yellow-500 text-xl" />
+            <IoCall  className="text-yellow-500 text-xl" />
             8087118536 / 8237784351
           </p>
         </div>
       </div>
 
       {/* Contact Form */}
-      <div className="max-w-4xl mx-auto mt-16 bg-white p-4 md:p-10 shadow-xl rounded-xl border border-yellow-200 overflow-x-hidden">
+      <div className="max-w-4xl mx-auto mt-16 bg-white p-4 md:p-10 shadow-xl rounded-xl border border-yellow-200 overflow-x-hidden" data-aos="fade-up">
         <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
           Request a Callback
         </h2>

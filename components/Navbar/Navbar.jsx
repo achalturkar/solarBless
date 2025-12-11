@@ -3,8 +3,10 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { HiMenu, HiX } from "react-icons/hi";
+import {  HiX } from "react-icons/hi";
 import { FiDownload } from "react-icons/fi";
+import { LuAlignLeft } from "react-icons/lu";
+
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -64,7 +66,7 @@ export default function Navbar() {
           ))}
 
           {/* Brochure Button */}
-          <Link href="/sunblessSolarProfile.pdf" target="_blank">
+          <Link href="/SunblessSolarProfile.pdf" target="_blank">
             <div className="flex items-center gap-2 px-4 py-2 rounded-full text-white text-sm font-semibold cursor-pointer bg-gradient-to-r from-yellow-500 to-orange-600 shadow-md hover:scale-105 hover:shadow-lg transition-all duration-300">
               <FiDownload size={18} />
               Brochure
@@ -74,7 +76,7 @@ export default function Navbar() {
 
         {/* Mobile View */}
         <div className="md:hidden flex items-center gap-3">
-          <Link href="/sunblessSolarProfile.pdf" target="_blank">
+          <Link href="/SunblessSolarProfile.pdf" target="_blank">
             <div className="flex items-center gap-1 px-3 py-1.5 rounded-full text-white text-sm font-semibold cursor-pointer bg-gradient-to-r from-yellow-500 to-orange-600 shadow-md transition-all duration-300">
               <FiDownload size={16} />
             </div>
@@ -84,7 +86,7 @@ export default function Navbar() {
             onClick={toggleMenu}
             className="text-gray-800 focus:outline-none text-3xl"
           >
-            {isOpen ? <HiX /> : <HiMenu />}
+            {isOpen ? <HiX /> : <LuAlignLeft />}
           </button>
         </div>
       </div>
@@ -99,7 +101,7 @@ export default function Navbar() {
       >
         {/* Header inside mobile menu */}
         <div className="flex justify-between items-center p-6">
-          <Link href="/sunblessSolarProfile.pdf" target="_blank">
+          <Link href="/SunblessSolarProfile.pdf" target="_blank">
             <div className="flex items-center gap-2 px-4 py-2 rounded-full text-white text-sm font-semibold cursor-pointer bg-gradient-to-r from-yellow-500 to-orange-600 shadow-md hover:scale-105 hover:shadow-lg transition-all duration-300">
               <FiDownload size={18} />
             </div>

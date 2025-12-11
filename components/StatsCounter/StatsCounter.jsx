@@ -75,7 +75,7 @@ export default function SolarStats() {
           Delivering sustainable energy solutions with trust & innovation.
         </p> */}
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8" data-aos="fade-down">
           {stats.map((stat, index) => (
             <div
               key={index}

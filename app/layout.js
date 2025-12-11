@@ -4,6 +4,8 @@ import TopUpButton from "@/components/TopUpButton/TopUpButton";
 import Whatsapp from "@/components/Whatsapp/Whatsapp";
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
+import AOSWrapper from "./AOSWrapper";
+
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -24,11 +26,15 @@ export default function RootLayout({ children }) {
       <body
         className={`${poppins.variable}  antialiased`}
       >
+                <AOSWrapper>
+
         <Navbar/>
         {children}
         <TopUpButton />
         <Whatsapp />
         <Footer/>
+                </AOSWrapper>
+
       </body>
     </html>
   );

@@ -27,7 +27,7 @@ export default function CoreSection() {
             <div
               key={index}
               className="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 text-left"
-            >
+             data-aos="fade-up">
               <div className="flex items-center space-x-3 mb-4">
                 <div className="bg-yellow-400 text-white p-3 rounded-full inline-flex">
                   <Icon className="w-5 h-5" />
@@ -42,13 +42,13 @@ export default function CoreSection() {
 
       {/* Mission & Vision */}
       <div className="mt-16 grid md:grid-cols-2 gap-8 max-w-7xl mx-auto">
-        <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-lg shadow-md">
+        <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-lg shadow-md"  data-aos="fade-up">
           <h3 className="text-2xl font-semibold text-gray-800 mb-3">Our Mission</h3>
           <p className="text-gray-700 leading-relaxed">
             To accelerate the adoption of solar energy by providing high-quality, cost-effective, and customized SWH and PV solutions, while exceeding customer expectations through exceptional service and support.
           </p>
         </div>
-        <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-lg shadow-md">
+        <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-lg shadow-md"  data-aos="fade-up">
           <h3 className="text-2xl font-semibold text-gray-800 mb-3">Our Vision</h3>
           <p className="text-gray-700 leading-relaxed">
             To be the preferred partner for sustainable energy solutions, driving the transition to a cleaner and more environmentally responsible world.

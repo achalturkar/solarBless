@@ -2,7 +2,7 @@ import { BsSunFill } from "react-icons/bs";
 
 export default function SectionTitle({ title, subtitle }) {
   return (
-    <div className="w-full text-center mb-8">
+    <div className="w-full text-center mb-8"  data-aos="fade-up">
       {/* Animated Solar Line */}
       
 
