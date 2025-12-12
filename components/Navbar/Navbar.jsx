@@ -3,10 +3,9 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import {  HiX } from "react-icons/hi";
+import { HiX } from "react-icons/hi";
 import { FiDownload } from "react-icons/fi";
 import { LuAlignLeft } from "react-icons/lu";
-
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +17,6 @@ export default function Navbar() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -36,8 +34,6 @@ export default function Navbar() {
       className={`
         fixed w-full z-50 transition-all duration-300
         ${isScrolled ? "bg-white shadow-md" : "bg-transparent"}
-        md:${isScrolled ? "bg-white" : "bg-transparent"}
-        bg-transparent
       `}
     >
       <div className="max-w-7xl mx-auto px-6 py-2 flex justify-between items-center">
@@ -49,17 +45,21 @@ export default function Navbar() {
             width={90}
             height={90}
             alt="Sunbless Solar Systems Logo"
-            className="object-contain hover:scale-105 transition-transform duration-300"
+            className="object-contain hover:scale-105 transition-transform duration-300 drop-shadow-lg"
           />
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex space-x-8 items-center font-semibold text-gray-800">
+        <div
+          className={`hidden md:flex space-x-8 items-center font-semibold 
+            ${isScrolled ? "text-gray-800" : "text-white"}
+          `}
+        >
           {navItems.map((item) => (
             <a
               key={item.name}
               href={item.href}
-              className="hover:text-yellow-500 transition-colors duration-200"
+              className="hover:text-yellow-400 transition-colors duration-200"
             >
               {item.name}
             </a>
@@ -76,6 +76,8 @@ export default function Navbar() {
 
         {/* Mobile View */}
         <div className="md:hidden flex items-center gap-3">
+
+          {/* Small brochure button */}
           <Link href="/SunblessSolarProfile.pdf" target="_blank">
             <div className="flex items-center gap-1 px-3 py-1.5 rounded-full text-white text-sm font-semibold cursor-pointer bg-gradient-to-r from-yellow-500 to-orange-600 shadow-md transition-all duration-300">
               <FiDownload size={16} />
@@ -84,7 +86,9 @@ export default function Navbar() {
 
           <button
             onClick={toggleMenu}
-            className="text-gray-800 focus:outline-none text-3xl"
+            className={`focus:outline-none text-3xl 
+              ${isScrolled ? "text-gray-800" : "text-white"}
+            `}
           >
             {isOpen ? <HiX /> : <LuAlignLeft />}
           </button>
@@ -112,7 +116,7 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* NAV LINKS inside slide */}
+        {/* Nav links inside slide */}
         <ul className="space-y-6 px-6 font-medium text-gray-800">
           {navItems.map((item) => (
             <li key={item.name}>
@@ -125,14 +129,6 @@ export default function Navbar() {
               </a>
             </li>
           ))}
-
-          {/* Brochure Button bottom */}
-          {/* <Link href="/sunblessSolarProfile.pdf" target="_blank">
-            <div className="mt-4 flex items-center gap-2 px-4 py-2 rounded-full text-white text-sm font-semibold cursor-pointer bg-gradient-to-r from-yellow-500 to-orange-600 shadow-md hover:scale-105 hover:shadow-lg transition-all duration-300 w-fit">
-              <FiDownload size={18} />
-              Download Brochure
-            </div>
-          </Link> */}
         </ul>
       </div>
     </nav>
