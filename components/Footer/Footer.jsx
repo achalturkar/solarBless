@@ -33,7 +33,7 @@ export default function Footer() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 grid sm:grid-cols-2 md:grid-cols-4 gap-14">
 
         {/* Logo + Description */}
-        <div>
+        <div data-aos="fade-up">
           <Image
             src="/sbss.webp"
             width={120}
@@ -52,7 +52,7 @@ export default function Footer() {
         </div>
 
         {/* Quick Links */}
-        <div>
+        <div data-aos="fade-up">
           <h3 className="text-lg font-semibold text-white mb-4 border-l-4 pl-3 border-yellow-400">
             Quick Links
           </h3>
@@ -71,7 +71,7 @@ export default function Footer() {
         </div>
 
         {/* Contact Info */}
-        <div>
+        <div data-aos="fade-up">
           <h3 className="text-lg font-semibold text-white mb-4 border-l-4 pl-3 border-yellow-400">
             Contact Us
           </h3>
@@ -115,7 +115,7 @@ export default function Footer() {
         </div>
 
         {/* Social Media */}
-        <div>
+        <div data-aos="fade-up">
           <h3 className="text-lg font-semibold text-white mb-4 border-l-4 pl-3 border-yellow-400">
             Follow Us
           </h3>

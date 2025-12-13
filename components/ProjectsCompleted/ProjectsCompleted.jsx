@@ -35,7 +35,7 @@ const pvProjects = [
 
 export default function ProjectsCompleted() {
   return (
-    <section className="py-8" id="projects">
+    <section className="py-10" id="projects">
       <div className="max-w-7xl mx-auto px-6">
         
 

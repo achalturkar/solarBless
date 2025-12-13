@@ -14,7 +14,7 @@ export default function HeroSection() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 8000);
+    }, 5000);
 
     return () => clearInterval(timer);
   }, []);
@@ -22,7 +22,7 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="relative w-full h-[90vh] md:h-[100vh] overflow-hidden"
+      className="relative w-full h-[90vh] md:h-[95vh] overflow-hidden"
     >
       {/* Slider Images */}
       {slides.map((slide, index) => (
@@ -41,7 +41,7 @@ export default function HeroSection() {
           />
 
           {/* DARKER Overlay for excellent text visibility */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/40"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/40 to-black/20"></div>
         </div>
       ))}
 
@@ -67,7 +67,7 @@ export default function HeroSection() {
         {/* Button */}
         <div className="mt-8 flex justify-center">
           <Link href={"#about"}>
-            <button className="px-7 py-3 rounded-full font-semibold bg-yellow-400 text-gray-900 shadow-lg hover:bg-yellow-500 hover:scale-105 transition-all duration-300">
+            <button className="px-7 py-3 rounded-full font-semibold bg-yellow-400 text-white cursor-pointer shadow-lg hover:bg-yellow-500 hover:scale-105 transition-all duration-300">
               Explore Our Solutions
             </button>
           </Link>

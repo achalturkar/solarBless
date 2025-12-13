@@ -4,7 +4,7 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 
 export default function Service() {
   return (
-    <section id="services" className="bg-white py-20 px-6">
+    <section id="services" className="bg-white py-10 px-6">
       <SectionTitle
         title="Our Solar Services"
         subtitle="Premium Solar Water Heating & Photovoltaic Energy Solutions"

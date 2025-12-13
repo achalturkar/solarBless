@@ -56,7 +56,7 @@ Message: ${formData.message}
   return (
     <section
       id="contact"
-      className="py-20 px-6 bg-gradient-to-b from-yellow-50 to-orange-50 overflow-x-hidden"
+      className="py-10 px-6 bg-gradient-to-b from-yellow-50 to-orange-50 overflow-x-hidden"
     >
       {/* Section Title */}
       <SectionTitle
