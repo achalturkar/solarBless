@@ -62,7 +62,6 @@ Message: ${formData.message}
       <SectionTitle
         title="Get in Touch"
         subtitle="Reach out for premium solar PV and solar water heater solutions"
-        data-aos="fade-up"
       />
 
       {/* Contact Details */}

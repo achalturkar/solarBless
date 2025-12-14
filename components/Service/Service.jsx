@@ -34,7 +34,7 @@ export default function Service() {
             />
 
             <Image
-              src="/swa1.jpeg"
+              src="/img/swa1.jpeg"
               alt="Solar water heater"
               width={500}
               height={500}
