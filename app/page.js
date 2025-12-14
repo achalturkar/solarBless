@@ -18,21 +18,18 @@ export default function Home() {
   return (
 
     <>
-      <Head>
-        <title>Brainhunt Ventures</title>
-        <meta
-          name="description"
-          content="Established in 2003, BrainHunt is a trusted HR services provider based in Nagpur, offering comprehensive recruitment, payroll, and compliance solutions. With a dynamic team of HR professionals, recruiters, consultants, and trainers, we bring deep industry expertise to deliver tailored solutions for both IT and non-IT sectors."
-        />
-        <meta
-          name="keywords"
-          content="Brainhunt Ventures, recruitment company, global hiring, staffing agency, IT recruitment, contractual, freelancing, permanent job, HR consultancy, Non-IT recruitment"
-        />
-        <meta name="author" content="Brainhunt Ventures" />
-        <meta name="robots" content="index, follow" />
-        <meta name="google-site-verification" content="nOsKnp2OQ6Tya7_prZ-Qp9yJhlcZbPlmwrxOJt-nhck" />
-        <link rel="canonical" href="https://www.brainhuntventures.com/" />
+       <Head>
+        {/* Basic SEO */}
+        <title>SunBless Solar Systems</title>
+        <meta name="description" content="SunBless Solar Systems offers high-quality solar panels, solar water heaters, and solar pumps in Pune. Save energy, reduce bills, and go green today!" />
+        <meta name="keywords" content="solar panels Pune, solar water heater Pune, solar pump Pune, solar energy solutions Pune, SunBless Solar" />
+        <meta name="author" content="SunBless Solar Systems" />
 
+         {/* Viewport */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
