@@ -21,6 +21,7 @@ export default function About() {
       transition-transform duration-700 
       group-hover:scale-110
     "
+    data-aos="fade-up"
           />
 
           {/* Soft Gradient Overlay */}
@@ -44,7 +45,7 @@ export default function About() {
             About SunBless Solar Systems
           </h2> */}
           <p className="text-gray-700 leading-relaxed mb-6">
-            SunBless Solar Systems is a <span className="font-semibold text-yellow-600">leading provider of innovative and reliable solar energy solutions</span>, specializing in both <span className="font-semibold text-yellow-600">Solar Water Heaters (SWHs)</span> and <span className="font-semibold text-yellow-600">Solar Photovoltaic (PV) Panel Systems.</span>
+           <span className="font-semibold text-red-700">SUNBLESS SOLAR SYSTEMS</span> is a <span className="font-semibold text-yellow-600">leading provider of innovative and reliable solar energy solutions</span>, specializing in both <span className="font-semibold text-yellow-600">Solar Water Heaters (SWHs)</span> and <span className="font-semibold text-yellow-600">Solar Photovoltaic (PV) Panel Systems.</span>
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
             We are committed to empowering individuals, businesses, and communities to embrace clean, affordable, and sustainable energy, contributing to a greener future for generations to come.

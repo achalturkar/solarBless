@@ -16,7 +16,7 @@ export default function Contact() {
     message: "",
   });
 
-  const ADMIN_WHATSAPP = "919359647748";
+  const ADMIN_WHATSAPP = "918087118536";
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });

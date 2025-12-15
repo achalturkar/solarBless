@@ -29,7 +29,7 @@ export default function Service() {
               src="/img/swaa.jpeg"
               alt="Solar heater tall"
               width={500}
-              height={800}
+              height={500}
               className="rounded-2xl object-cover h-full w-full shadow-xl row-span-2"
             />
 
@@ -82,7 +82,7 @@ export default function Service() {
           {/* IMAGE BLOCK */}
           <div className="order-1 md:order-2 grid grid-cols-2 gap-4" data-aos="fade-up">
             <Image
-              src="/img/ssp.jpg"
+              src="/img/spl.jpeg"
               alt="Solar PV"
               width={500}
               height={500}
@@ -93,12 +93,12 @@ export default function Service() {
               src="/img/sv.png"
               alt="Solar PV tall"
               width={500}
-              height={800}
+              height={500}
               className="rounded-2xl object-cover h-full w-full shadow-xl row-span-2"
             />
 
             <Image
-              src="/img/spa2.jpg"
+              src="/img/SP1.webp"
               alt="Solar PV"
               width={500}
               height={500}

@@ -22,7 +22,7 @@ export default function Navbar() {
   }, []);
 
   const navItems = [
-    { name: "Home", href: "#home" },
+    { name: "Home", href: "#" },
     { name: "About", href: "#about" },
     { name: "Services", href: "#services" },
     { name: "Projects", href: "#projects" },
@@ -66,23 +66,23 @@ export default function Navbar() {
           ))}
 
           {/* Brochure Button */}
-          <Link href="/SunblessSolarProfile.pdf" target="_blank">
+          {/* <Link href="/SunblessSolarProfile.pdf" target="_blank">
             <div className="flex items-center gap-2 px-4 py-2 rounded-full text-white text-sm font-semibold cursor-pointer bg-gradient-to-r from-yellow-500 to-orange-600 shadow-md hover:scale-105 hover:shadow-lg transition-all duration-300">
               <FiDownload size={18} />
               Brochure
             </div>
-          </Link>
+          </Link> */}
         </div>
 
         {/* Mobile View */}
         <div className="md:hidden flex items-center gap-3">
 
           {/* Small brochure button */}
-          <Link href="/SunblessSolarProfile.pdf" target="_blank">
+          {/* <Link href="/SunblessSolarProfile.pdf" target="_blank">
             <div className="flex items-center gap-1 px-3 py-1.5 rounded-full text-white text-sm font-semibold cursor-pointer bg-gradient-to-r from-yellow-500 to-orange-600 shadow-md transition-all duration-300">
               <FiDownload size={16} />
             </div>
-          </Link>
+          </Link> */}
 
           <button
             onClick={toggleMenu}
@@ -104,12 +104,15 @@ export default function Navbar() {
         `}
       >
         {/* Header inside mobile menu */}
-        <div className="flex justify-between items-center p-6">
-          <Link href="/SunblessSolarProfile.pdf" target="_blank">
+        <div className="flex justify-left items-center p-6">
+          {/* <Link href="/SunblessSolarProfile.pdf" target="_blank">
             <div className="flex items-center gap-2 px-4 py-2 rounded-full text-white text-sm font-semibold cursor-pointer bg-gradient-to-r from-yellow-500 to-orange-600 shadow-md hover:scale-105 hover:shadow-lg transition-all duration-300">
               <FiDownload size={18} />
             </div>
-          </Link>
+          </Link> */}
+          <div>
+
+          </div>
 
           <button onClick={toggleMenu} className="text-3xl text-gray-800">
             <HiX />

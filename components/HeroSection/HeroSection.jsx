@@ -21,16 +21,16 @@ export default function HeroSection() {
 
   return (
     <section
-      id="home"
+      id=""
       className="relative w-full h-[90vh] md:h-[95vh] overflow-hidden"
     >
+
       {/* Slider Images */}
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute inset-0 transition-all duration-[1400ms] ease-out ${
-            index === current ? "opacity-100 scale-100" : "opacity-0 scale-105"
-          }`}
+          className={`absolute inset-0 transition-all duration-[1400ms] ease-out ${index === current ? "opacity-100 scale-100" : "opacity-0 scale-105"
+            }`}
         >
           <Image
             src={slide.src}
@@ -47,7 +47,15 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-6 h-full flex flex-col justify-center text-center">
-        
+
+        <div className="text-center">
+          <h1 className="inline-block text-base md:text-2xl font-bold tracking-widest text-red-500 uppercase mb-2
+                 bg-white px-4 py-1 rounded-xl shadow-sm">
+            SUNBLESS SOLAR SYSTEMS
+          </h1>
+        </div>
+
+
         <h3 className="text-base md:text-lg font-semibold tracking-widest text-green-400 uppercase">
           Powering India Towards a Greener Future
         </h3>
@@ -67,7 +75,7 @@ export default function HeroSection() {
         {/* Button */}
         <div className="mt-8 flex justify-center">
           <Link href={"#about"}>
-            <button className="px-7 py-3 rounded-full font-semibold bg-yellow-400 text-white cursor-pointer shadow-lg hover:bg-yellow-500 hover:scale-105 transition-all duration-300">
+            <button className="px-7 py-3 rounded-full font-semibold bg-red-500 text-white cursor-pointer shadow-lg hover:bg-red-600 hover:scale-105 transition-all duration-300">
               Explore Our Solutions
             </button>
           </Link>
@@ -79,11 +87,10 @@ export default function HeroSection() {
         {slides.map((_, index) => (
           <div
             key={index}
-            className={`w-1 h-1 rounded-full transition-all duration-300 ${
-              index === current
-                ? "bg-yellow-300 scale-150"
-                : "bg-white/40 hover:bg-white/70"
-            }`}
+            className={`w-1 h-1 rounded-full transition-all duration-300 ${index === current
+              ? "bg-yellow-300 scale-150"
+              : "bg-white/40 hover:bg-white/70"
+              }`}
           ></div>
         ))}
       </div>
